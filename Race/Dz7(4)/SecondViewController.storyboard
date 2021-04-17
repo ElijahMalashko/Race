@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Frw-yk-ka6">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="4Xk-J8-SP6">
+            <objects>
+                <viewController id="Frw-yk-ka6" customClass="SecondViewController" customModule="Dz7_4_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1Q-rB-53H">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-JO-Hyb">
+                                <rect key="frame" x="-11" y="-461" width="451" height="1853"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-Vk-FEd">
+                                <rect key="frame" x="0.0" y="-200" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar3" translatesAutoresizingMaskIntoConstraints="NO" id="NYe-jl-ThQ">
+                                <rect key="frame" x="0.0" y="-200" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar4" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-oM-qBA">
+                                <rect key="frame" x="200" y="-200" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar2" translatesAutoresizingMaskIntoConstraints="NO" id="np0-ZS-kjz">
+                                <rect key="frame" x="200" y="-200" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-46-16o">
+                                <rect key="frame" x="269" y="692" width="103" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button" image="car"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jte-Dk-w6Z" appends="YES" id="8oD-Ap-3cz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bJC-lm-bMr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dxc-sg-t3g"/>
+                    <connections>
+                        <outlet property="carView" destination="ZDe-Vk-FEd" id="maW-jZ-mMO"/>
+                        <outlet property="carViewFour" destination="xc1-oM-qBA" id="1Y1-ux-ued"/>
+                        <outlet property="carViewThree" destination="NYe-jl-ThQ" id="e0s-Wk-EeR"/>
+                        <outlet property="carViewTwo" destination="np0-ZS-kjz" id="hdl-jp-Ots"/>
+                        <outlet property="onCarButton" destination="HgW-46-16o" id="V7f-FV-zla"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf1-5e-elP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jte-Dk-w6Z">
+                    <connections>
+                        <action selector="onPan:" destination="Frw-yk-ka6" id="DiX-Tq-H3j"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1047.1962616822429" y="230.02159827213825"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="228" height="502"/>
+        <image name="objectCar" width="512" height="512"/>
+        <image name="objectCar2" width="512" height="512"/>
+        <image name="objectCar3" width="512" height="512"/>
+        <image name="objectCar4" width="512" height="512"/>
+        <image name="road" width="646" height="1392"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
