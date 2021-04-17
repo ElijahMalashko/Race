@@ -15,6 +15,6 @@ extension UIViewController {
         guard let viewController = storyboard.instantiateInitialViewController() as? Self else {
             fatalError("Can't init view controller from storyboard")
         }
-        return viewController
+    return viewController
     }
 }

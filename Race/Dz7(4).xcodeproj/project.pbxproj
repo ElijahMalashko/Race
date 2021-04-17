@@ -18,6 +18,7 @@
 		FAE9A4CC262B02C3001D0D80 /* UILable+UIUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9A4CB262B02C3001D0D80 /* UILable+UIUtilites.swift */; };
 		FAE9A4CF262B071D001D0D80 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9A4CE262B071D001D0D80 /* UIColor+Hex.swift */; };
 		FAE9A4D2262B096B001D0D80 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9A4D1262B096B001D0D80 /* UIViewController+Storyboard.swift */; };
+		FAE9A4D6262B1277001D0D80 /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE9A4D5262B1277001D0D80 /* GothamPro-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAE9A4CB262B02C3001D0D80 /* UILable+UIUtilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+UIUtilites.swift"; sourceTree = "<group>"; };
 		FAE9A4CE262B071D001D0D80 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FAE9A4D1262B096B001D0D80 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		FAE9A4D5262B1277001D0D80 /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		FA0C8746260A4BF900063E54 /* Dz7(4) */ = {
 			isa = PBXGroup;
 			children = (
+				FAE9A4D4262B11D0001D0D80 /* Resources */,
 				FA0C8747260A4BF900063E54 /* AppDelegate.swift */,
 				FA0C8749260A4BF900063E54 /* SceneDelegate.swift */,
 				FA0C874B260A4BF900063E54 /* ViewController.swift */,
@@ -75,11 +78,19 @@
 				FAB1B06426231F98005DC490 /* SecondViewController.swift */,
 				FA0C874D260A4BF900063E54 /* Main.storyboard */,
 				FA0268DA2623226C00F587A9 /* SecondViewController.storyboard */,
-				FA0C8750260A4BFB00063E54 /* Assets.xcassets */,
 				FA0C8752260A4BFB00063E54 /* LaunchScreen.storyboard */,
+				FA0C8750260A4BFB00063E54 /* Assets.xcassets */,
 				FA0C8755260A4BFB00063E54 /* Info.plist */,
 			);
 			path = "Dz7(4)";
+			sourceTree = "<group>";
+		};
+		FAE9A4D4262B11D0001D0D80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAE9A4D5262B1277001D0D80 /* GothamPro-Medium.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				FA0C8754260A4BFB00063E54 /* LaunchScreen.storyboard in Resources */,
 				FA0268DB2623226C00F587A9 /* SecondViewController.storyboard in Resources */,
+				FAE9A4D6262B1277001D0D80 /* GothamPro-Medium.ttf in Resources */,
 				FA0C8751260A4BFB00063E54 /* Assets.xcassets in Resources */,
 				FA0C874F260A4BF900063E54 /* Main.storyboard in Resources */,
 			);
