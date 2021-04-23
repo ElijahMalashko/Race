@@ -21,24 +21,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-CN-jdo">
-                                <rect key="frame" x="166" y="432" width="119" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test game 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmS-3q-gpw">
+                                <rect key="frame" x="131" y="830" width="166" height="15.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="wMl-nr-PYx"/>
+                                    <constraint firstAttribute="height" constant="15.33" id="zhY-bn-jv5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-CN-jdo">
+                                <rect key="frame" x="149" y="457" width="131" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="9PN-Le-O4T"/>
+                                    <constraint firstAttribute="height" constant="99" id="uyR-is-Nyy"/>
+                                </constraints>
                                 <state key="normal" title="Play" image="play"/>
                                 <connections>
                                     <action selector="onPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jby-Ux-jVg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="game test 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmS-3q-gpw">
-                                <rect key="frame" x="131" y="830" width="166" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tmS-3q-gpw" firstAttribute="top" secondItem="WfJ-CN-jdo" secondAttribute="bottom" constant="274" id="J8e-vD-n7n"/>
+                            <constraint firstItem="tmS-3q-gpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="X6x-od-L3o"/>
+                            <constraint firstItem="tmS-3q-gpw" firstAttribute="top" secondItem="WfJ-CN-jdo" secondAttribute="bottom" constant="274" id="XBx-yd-f9y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmS-3q-gpw" secondAttribute="trailing" constant="131" id="a5j-ie-OfO"/>
+                            <constraint firstItem="WfJ-CN-jdo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="af1-Lf-rP8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WfJ-CN-jdo" secondAttribute="trailing" constant="148" id="lTN-Ks-piJ"/>
+                            <constraint firstItem="WfJ-CN-jdo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="369" id="tRb-mg-SzO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tmS-3q-gpw" secondAttribute="bottom" constant="46.670000000000002" id="ydo-Fn-o7V"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cZe-mu-CGm"/>
                 </viewController>

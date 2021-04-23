@@ -1,19 +1,13 @@
 //
-//  UILable+UIUtilites.swift
+//  Extension UIView.swift
 //  Dz7(4)
 //
-//  Created by Elijah Malashko on 17.04.21.
+//  Created by Elijah Malashko on 23.04.21.
 //
 
 import Foundation
 import UIKit
 
-extension UILabel {
-    func applyCornerRadius(_ radius: CGFloat) {
-        clipsToBounds = true
-        layer.cornerRadius = radius
-    }
-}
 extension UIView {
     func makeShadow() {
         self.layer.shadowColor = UIColor.black.cgColor

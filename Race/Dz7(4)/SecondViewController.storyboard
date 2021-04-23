@@ -16,30 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-JO-Hyb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="qy8-JO-Hyb">
                                 <rect key="frame" x="-11" y="-461" width="451" height="1853"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="451" id="Bbj-Ne-O4Y"/>
+                                    <constraint firstAttribute="height" constant="1853" id="mRJ-5Q-WyI"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-Vk-FEd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="objectCar" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-Vk-FEd">
                                 <rect key="frame" x="0.0" y="-200" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Nch-zS-4d1"/>
+                                    <constraint firstAttribute="height" constant="200" id="oqO-if-BKe"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar3" translatesAutoresizingMaskIntoConstraints="NO" id="NYe-jl-ThQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="objectCar3" translatesAutoresizingMaskIntoConstraints="NO" id="NYe-jl-ThQ">
                                 <rect key="frame" x="0.0" y="-200" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5dB-wi-oGE"/>
+                                    <constraint firstAttribute="width" constant="240" id="nwG-qE-mhV"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar4" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-oM-qBA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="objectCar4" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-oM-qBA">
                                 <rect key="frame" x="200" y="-200" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Iaw-kU-McU"/>
+                                    <constraint firstAttribute="height" constant="200" id="cLv-rI-m1P"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar2" translatesAutoresizingMaskIntoConstraints="NO" id="np0-ZS-kjz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="objectCar2" translatesAutoresizingMaskIntoConstraints="NO" id="np0-ZS-kjz">
                                 <rect key="frame" x="200" y="-200" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="09V-wx-IOq"/>
+                                    <constraint firstAttribute="height" constant="200" id="Z6T-24-zXa"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-46-16o">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-46-16o">
                                 <rect key="frame" x="269" y="692" width="103" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="C9p-5b-YHp"/>
+                                    <constraint firstAttribute="height" constant="200" id="HKc-68-TBs"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="car"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="jte-Dk-w6Z" appends="YES" id="8oD-Ap-3cz"/>
@@ -48,6 +66,32 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJC-lm-bMr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NYe-jl-ThQ" firstAttribute="top" secondItem="p1Q-rB-53H" secondAttribute="top" constant="-200" id="1mT-Pp-CVv"/>
+                            <constraint firstItem="qy8-JO-Hyb" firstAttribute="top" secondItem="p1Q-rB-53H" secondAttribute="top" constant="-461" id="3IK-l8-Cy8"/>
+                            <constraint firstItem="np0-ZS-kjz" firstAttribute="leading" secondItem="p1Q-rB-53H" secondAttribute="leading" constant="200" id="97a-ZR-qHZ"/>
+                            <constraint firstItem="NYe-jl-ThQ" firstAttribute="leading" secondItem="p1Q-rB-53H" secondAttribute="leading" id="9Vf-se-f6Y"/>
+                            <constraint firstItem="ZDe-Vk-FEd" firstAttribute="leading" secondItem="p1Q-rB-53H" secondAttribute="leading" id="9rZ-fj-3qk"/>
+                            <constraint firstItem="np0-ZS-kjz" firstAttribute="top" secondItem="p1Q-rB-53H" secondAttribute="top" constant="-200" id="AaW-jk-rOy"/>
+                            <constraint firstAttribute="bottom" secondItem="qy8-JO-Hyb" secondAttribute="bottom" constant="-466" id="F8J-hs-irp"/>
+                            <constraint firstItem="HgW-46-16o" firstAttribute="leading" secondItem="bJC-lm-bMr" secondAttribute="leading" constant="269" id="FZV-53-bsP"/>
+                            <constraint firstItem="bJC-lm-bMr" firstAttribute="trailing" secondItem="HgW-46-16o" secondAttribute="trailing" constant="56" id="G1i-jJ-Z4t"/>
+                            <constraint firstItem="xc1-oM-qBA" firstAttribute="top" secondItem="p1Q-rB-53H" secondAttribute="top" constant="-200" id="Gh0-vz-MbH"/>
+                            <constraint firstItem="HgW-46-16o" firstAttribute="top" secondItem="np0-ZS-kjz" secondAttribute="bottom" constant="692" id="LZz-gM-OWg"/>
+                            <constraint firstAttribute="trailing" secondItem="ZDe-Vk-FEd" secondAttribute="trailing" constant="188" id="MbB-Zd-3nc"/>
+                            <constraint firstItem="HgW-46-16o" firstAttribute="top" secondItem="xc1-oM-qBA" secondAttribute="bottom" constant="692" id="UC2-ab-k4N"/>
+                            <constraint firstItem="ZDe-Vk-FEd" firstAttribute="top" secondItem="p1Q-rB-53H" secondAttribute="top" constant="-200" id="V2o-Sk-vRc"/>
+                            <constraint firstItem="HgW-46-16o" firstAttribute="top" secondItem="bJC-lm-bMr" secondAttribute="top" constant="648" id="XSX-4q-ReU"/>
+                            <constraint firstItem="bJC-lm-bMr" firstAttribute="bottom" secondItem="ZDe-Vk-FEd" secondAttribute="bottom" constant="892" id="YUy-z8-C9E"/>
+                            <constraint firstAttribute="trailing" secondItem="NYe-jl-ThQ" secondAttribute="trailing" constant="188" id="Z0c-Vp-lDi"/>
+                            <constraint firstItem="HgW-46-16o" firstAttribute="bottom" secondItem="bJC-lm-bMr" secondAttribute="bottom" id="beG-gm-gcO"/>
+                            <constraint firstAttribute="trailing" secondItem="np0-ZS-kjz" secondAttribute="trailing" constant="-12" id="euk-jm-ZIc"/>
+                            <constraint firstAttribute="trailing" secondItem="qy8-JO-Hyb" secondAttribute="trailing" constant="-12" id="kaT-ez-7RV"/>
+                            <constraint firstItem="qy8-JO-Hyb" firstAttribute="leading" secondItem="p1Q-rB-53H" secondAttribute="leading" constant="-11" id="keV-p8-lbE"/>
+                            <constraint firstItem="xc1-oM-qBA" firstAttribute="leading" secondItem="p1Q-rB-53H" secondAttribute="leading" constant="200" id="rqd-Ac-mQh"/>
+                            <constraint firstAttribute="trailing" secondItem="xc1-oM-qBA" secondAttribute="trailing" constant="-12" id="zA9-7c-EkA"/>
+                            <constraint firstItem="bJC-lm-bMr" firstAttribute="bottom" secondItem="NYe-jl-ThQ" secondAttribute="bottom" constant="892" id="zdk-n5-A9G"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dxc-sg-t3g"/>
                     <connections>
