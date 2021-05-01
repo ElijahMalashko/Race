@@ -28,11 +28,42 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cZe-mu-CGm"/>
+                    <navigationItem key="navigationItem" id="cZe-mu-CGm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="text.justify" catalog="system" id="ERA-K4-Ufc">
+                            <connections>
+                                <segue destination="37K-cM-Hlm" kind="show" id="fMG-Vg-zqd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186.44859813084111" y="68.682505399568043"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0xq-IK-Me7">
+            <objects>
+                <viewController id="37K-cM-Hlm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dXS-6l-Zob">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noi-Ob-gMN">
+                                <rect key="frame" x="112" y="100" width="194" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hWd-fA-gLs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="elx-0g-fNz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGC-G0-c8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735.98130841121485" y="68.682505399568043"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JEO-Te-Zjh">
@@ -53,6 +84,7 @@
     </scenes>
     <resources>
         <image name="play" width="512" height="512"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
