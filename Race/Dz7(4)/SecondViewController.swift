@@ -9,6 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     private var xCordCar: Int = 0
+    let vc = UIViewController.self
     @IBOutlet weak var carView: UIImageView!
     @IBOutlet weak var carViewTwo: UIImageView!
     @IBOutlet weak var carViewThree: UIImageView!
