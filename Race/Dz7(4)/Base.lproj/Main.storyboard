@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,9 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-CN-jdo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-CN-jdo">
                                 <rect key="frame" x="166" y="432" width="119" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="cm4-Jv-mBt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="qjx-WA-Z0t"/>
+                                </constraints>
                                 <state key="normal" title="Play" image="play"/>
                                 <connections>
                                     <action selector="onPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jby-Ux-jVg"/>
@@ -27,12 +35,82 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WfJ-CN-jdo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="RGb-qc-Qdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WfJ-CN-jdo" secondAttribute="trailing" constant="143" id="ZS0-jy-sSh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WfJ-CN-jdo" secondAttribute="bottom" constant="361" id="c3A-qn-3BR"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cZe-mu-CGm"/>
+                    <navigationItem key="navigationItem" id="cZe-mu-CGm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="text.justify" catalog="system" style="done" id="UZa-jL-RSX">
+                            <connections>
+                                <segue destination="Fg1-Zi-pDV" kind="show" id="r1a-3f-gcK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-186.44859813084111" y="68.682505399568043"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eYM-Jm-UJf">
+            <objects>
+                <viewController id="Fg1-Zi-pDV" customClass="ViewController" customModule="Dz7_4_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbk-lR-J8g">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar5" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-Tx-r6f">
+                                <rect key="frame" x="184" y="213" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1I1-NH-R5m">
+                                <rect key="frame" x="184" y="214" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCarViewButtonTwo:" destination="Fg1-Zi-pDV" eventType="touchUpInside" id="KAb-Sr-cyK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="objectCar6" translatesAutoresizingMaskIntoConstraints="NO" id="hjE-yi-Q5D">
+                                <rect key="frame" x="309" y="213" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-04-BmY">
+                                <rect key="frame" x="59" y="214" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCarViewButton:" destination="Fg1-Zi-pDV" eventType="touchUpInside" id="6Fg-p3-mlo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-sm-fma">
+                                <rect key="frame" x="309" y="214" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCarViewButtonThree:" destination="Fg1-Zi-pDV" eventType="touchUpInside" id="KNR-QV-dEi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KK-9B-E57">
+                                <rect key="frame" x="150" y="109" width="129" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="22"/>
+                                <state key="normal" title="Change Car">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="mUk-Cw-l18">
+                                <rect key="frame" x="59" y="214" width="60" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SOM-Yg-Zwx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="glq-gQ-Tya"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXn-px-qBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622.42990654205607" y="75.809935205183592"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JEO-Te-Zjh">
@@ -52,7 +130,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car" width="228" height="502"/>
+        <image name="objectCar5" width="226" height="507"/>
+        <image name="objectCar6" width="248" height="506"/>
         <image name="play" width="512" height="512"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
