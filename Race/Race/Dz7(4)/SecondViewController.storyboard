@@ -40,11 +40,17 @@
                                 <rect key="frame" x="269" y="692" width="103" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <state key="normal" title="Button" image="car"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="jte-Dk-w6Z" appends="YES" id="8oD-Ap-3cz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLU-g2-BvM">
+                                <rect key="frame" x="35" y="68" width="153" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJC-lm-bMr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,6 +62,7 @@
                         <outlet property="carViewThree" destination="NYe-jl-ThQ" id="e0s-Wk-EeR"/>
                         <outlet property="carViewTwo" destination="np0-ZS-kjz" id="hdl-jp-Ots"/>
                         <outlet property="onCarButton" destination="HgW-46-16o" id="V7f-FV-zla"/>
+                        <outlet property="scoreLable" destination="yLU-g2-BvM" id="s4D-FP-dpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf1-5e-elP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +76,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="car" width="228" height="502"/>
         <image name="objectCar" width="512" height="512"/>
         <image name="objectCar2" width="512" height="512"/>
         <image name="objectCar3" width="512" height="512"/>

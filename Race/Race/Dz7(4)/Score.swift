@@ -9,5 +9,10 @@ import Foundation
 import UIKit
 
 struct ScoreNumber: Codable {
-    static var score: Int = 0
+    static var score: Int = 10
+    var scores = score
+}
+struct ScoreModel: Codable {
+    var score = ScoreNumber.score
+    
 }
